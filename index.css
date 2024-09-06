@@ -1,0 +1,4 @@
+body {
+    background: url('20240602_155712.jpg') no-repeat center center fixed;
+    background-size: cover; /* Stretches the image to cover the entire background */
+}

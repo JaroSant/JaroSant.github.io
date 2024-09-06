@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    /*background: url("20240602_155712.jpg");
+    background-size: cover; /* Stretches the image to cover the entire background */
+    color: #333;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* White overlay to make the background faint */
+    z-index: -1;
+}
+
+header {
+    background: #4b6b47; /* Dark green */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Georgia', serif;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+}
+
+nav {
+    background: #ddd; /* Light grey */
+    color: #333;
+    padding: 20px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    border-right: 2px solid #4b6b47; /* Dark green */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav a {
+    color: #4b6b47; /* Dark green */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Georgia', serif; /* Match header font */
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav a:not(:first-child) {
+    margin-top: 0.5cm;
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    max-width: calc(100% - 12cm); /* Reserve space for the photo */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #e0e0e0; /* Slightly darker grey */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1cm; /* Add space to the left */
+}
+
+section h2 {
+    color: #4b6b47; /* Dark green */
+    font-family: 'Georgia', serif;
+    margin-top: 0;
+}
+
+section p {
+    font-family: 'Arial', sans-serif;
+}
+
+.photo-container {
+    width: 10cm;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
