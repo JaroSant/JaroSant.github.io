@@ -2,3 +2,11 @@ body {
     background: url('20230623_152114.jpg') no-repeat center center fixed;
     background-size: cover; /* Stretches the image to cover the entire background */
 }
+
+.container main {
+  display: block;        /* instead of flex or grid */
+}
+
+.container nav {
+  margin-bottom: 1em;    /* if you still want nav above the sections */
+}

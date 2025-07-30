@@ -10,6 +10,25 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // list your five background files here
+            const images = [
+                "photos/20240602_155712.jpg",
+                "photos/20230623_152114.jpg",
+                "photos/20230603_114709.jpg",
+                "photos/20250531_125136.jpg",
+                "photos/20250529_143715.jpg",
+                "photos/20250628_134054.jpg",
+                "photos/20250625_114013.jpg",
+                "photos/20250622_150932.jpg"
+            ];
+            // pick one at random
+            const pick = images[Math.floor(Math.random() * images.length)];
+            // apply it
+            document.body.style.backgroundImage = `url('${pick}')`;
+        });
+    </script>
     <header>
         <h1>Jaromir Sant</h1>
     </header>
@@ -21,7 +40,7 @@
         </nav>
         <main>
             <section id="publications">
-                <h2>Publications</h2>
+                <h2>Publications and preprints</h2>
                 <ul>
                     <p>J. Sant, P. A. Jenkins, J. Koskela, D. Span&ograve;, (2025+). Bayesian inference from time series
                         of allele frequency data using exact simulation techniques. [<a
@@ -34,7 +53,8 @@
 
                     <p>P. A. Jenkins, J. Koskela, V. M. Rivero, J. Sant, D. Span&ograve;, I. Valenti&#263; (2025).
                         Excursion theory for the Wright&ndash;Fisher diffusion. <em>Electronic Journal of Probability,
-                        </em>To appear. [<a href="https://arxiv.org/abs/2309.16271">arxiv</a>]</p>
+                        </em> 30: 1-31. [<a href="https://doi.org/10.1214/25-EJP1354">Abstract &amp; pdf</a>][<a
+                            href="https://arxiv.org/abs/2309.16271">arxiv</a>]</p>
 
                     <p>J. Sant, P. A. Jenkins, J. Koskela, D. Span&ograve; (2023). EWF: simulating exact paths of the
                         Wright&ndash;Fisher diffusion.&nbsp;<em>Bioinformatics, </em>39(1):&nbsp;btad017
@@ -47,6 +67,17 @@
                             Journal of Statistics,</em> 49 (4): 1728-1760. [<a
                             href="https://doi.org/10.1111/sjos.12572">Abstract &amp; pdf</a>][<a
                             href="https://arxiv.org/abs/2001.03527">arxiv</a>]</p>
+
+                </ul>
+            </section>
+            <section id="conf-proc">
+                <h2>Conference proceedings</h2>
+                <ul>
+                    <p>J. Sant, L. Frattegiani, M. Ruggiero (2025).&nbsp;Likelihood-Free Inference for Direct
+                        Observations of a Scalar Stationary Wright&ndash;Fisher Diffusion.&nbsp;<em>Statistics for
+                            Innovation IV. SIS 2025. Italian Statistical Society Series on Advances in Statistics.
+                            Springer.</em> 305-311. [<a href="https://doi.org/10.1007/978-3-031-96033-8_50">Abstract
+                            &amp; pdf</a>]</p>
 
                 </ul>
             </section>

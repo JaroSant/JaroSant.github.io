@@ -10,6 +10,25 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // list your five background files here
+            const images = [
+                "photos/20240602_155712.jpg",
+                "photos/20230623_152114.jpg",
+                "photos/20230603_114709.jpg",
+                "photos/20250531_125136.jpg",
+                "photos/20250529_143715.jpg",
+                "photos/20250628_134054.jpg",
+                "photos/20250625_114013.jpg",
+                "photos/20250622_150932.jpg"
+            ];
+            // pick one at random
+            const pick = images[Math.floor(Math.random() * images.length)];
+            // apply it
+            document.body.style.backgroundImage = `url('${pick}')`;
+        });
+    </script>
     <header>
         <h1>Jaromir Sant</h1>
     </header>
@@ -23,7 +42,7 @@
             <div class="content">
                 <section id="hello">
                     <h2>Hello!</h2>
-                    <p>I'm a posdoct at the Dipartimento di Scienze Economico-Sociali e Matematico-Statistiche (<a
+                    <p>I'm a postdoc at the Dipartimento di Scienze Economico-Sociali e Matematico-Statistiche (<a
                             href="https://www.esomas.unito.it/do/home.pl">ESOMAS</a>)
                         at the Università di Torino, working with <a href="https://www.matteoruggiero.it/">Prof. Matteo
                             Ruggiero</a>. I am also affiliated to the <a href="https://www.carloalberto.org/"> Collegio
@@ -57,7 +76,7 @@
                             href="mailto:jaromir.sant@gmail.com">jaromir.sant@gmail.com</a></p>
             </div>
             <div class="photo-container">
-                <img src="photo.jpg" alt="Jaromir Sant">
+                <img src="photos/photo_new.jpg" alt="Jaromir Sant">
             </div>
         </main>
     </div>

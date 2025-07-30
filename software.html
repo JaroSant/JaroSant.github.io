@@ -10,6 +10,25 @@
 </head>
 
 <body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // list your five background files here
+            const images = [
+                "photos/20240602_155712.jpg",
+                "photos/20230623_152114.jpg",
+                "photos/20230603_114709.jpg",
+                "photos/20250531_125136.jpg",
+                "photos/20250529_143715.jpg",
+                "photos/20250628_134054.jpg",
+                "photos/20250625_114013.jpg",
+                "photos/20250622_150932.jpg"
+            ];
+            // pick one at random
+            const pick = images[Math.floor(Math.random() * images.length)];
+            // apply it
+            document.body.style.backgroundImage = `url('${pick}')`;
+        });
+    </script>
     <header>
         <h1>Jaromir Sant</h1>
     </header>
@@ -26,7 +45,8 @@
                 <ul>
                     <li><a href="https://github.com/jarosant/EWF">EWF</a> - exact diffusion and diffusion bridge
                         simulation for the Wright–Fisher diffusion</li>
-                    <li><a href="https://github.com/jarosant/MCMC4WF">MCMC4WF</a> - exact Bayesian inference for selection and allele age for the Wright–Fisher diffusion</li>
+                    <li><a href="https://github.com/jarosant/MCMC4WF">MCMC4WF</a> - exact Bayesian inference for
+                        selection and allele age for the Wright–Fisher diffusion</li>
 
                 </ul>
                 <p>I have also been involved in the development of the <a
